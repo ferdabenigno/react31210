@@ -1,5 +1,8 @@
 import React from 'react';
-import "./styles.css";
+import CartWidget from '../components/CardWidget';
+import "../components/NavBar style/styles.css";
+
+
 
 
 const navItems = [
@@ -10,10 +13,6 @@ const navItems = [
 {   
     id:2,
     label: "Actividades",
-},
-{
-    id:3,
-    label: "Eventos",
 },
 {
     id:4,
@@ -39,15 +38,13 @@ const NavBar = () => {
             {navItems.map((item) => (
             <a href="/" className="nav-item" key={item.id}>{item.label}</a>
             ))}
-          </div>
-          
-
-          
+          </div>         
+        <CartWidget />        
         </div>
-      
-            
-    );
+        
+        
 
+    );
 };
 
 export default NavBar;
