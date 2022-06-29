@@ -12,15 +12,7 @@ const navItems = [
 },
 {   
     id:2,
-    label: "Actividades",
-},
-{
-    id:4,
-    label: "Galeria",
-},
-{
-    id:5,
-    label: "Reservas",
+    label: "Celulares",
 },
 {
     id:6,
@@ -33,7 +25,7 @@ const NavBar = () => {
     return(
     
         <div className="nav">
-          <h1 className="nav-logo">ComplejoDonBosco</h1>
+          <h1 className="nav-logo">CelularesFernando</h1>
           <div>
             {navItems.map((item) => (
             <a href="/" className="nav-item" key={item.id}>{item.label}</a>
