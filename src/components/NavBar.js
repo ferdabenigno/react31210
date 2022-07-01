@@ -2,9 +2,6 @@ import React from 'react';
 import CartWidget from '../components/CardWidget';
 import "../components/NavBar style/styles.css";
 
-
-
-
 const navItems = [
 {
     id:1,
@@ -33,9 +30,7 @@ const NavBar = () => {
           </div>         
         <CartWidget />        
         </div>
-        
-        
-
+    
     );
 };
 
