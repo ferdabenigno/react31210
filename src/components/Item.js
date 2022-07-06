@@ -1,16 +1,19 @@
 import React from "react";
-import ItemList from "../components/ItemList"
-const Item = ({producto}) => {
 
-    return(
-
-        <div  className="card w-50">
-            <div className="card-body">
-                <h5 className="card-title">{producto.name}</h5>
-                <p className="card-text">{producto.name}</p>
-                <a href="#" className="btn btn-primary">Button</a>
-            </div>
-        </div>
+const Item = ({product}) => {
+    console.log(product)
+    const {img, name, precio} = product
+  
+    return (
+      <div className="card" style={{width:'20rem', margin:'.5rem'}}>
+      <img src={img}className="card-img-top" alt={name}/>
+      <div className="card-body">
+          <p className="card-text">{name}</p>
+          <p className="card-text">{precio}</p>
+      </div>
+      <button className='btn btn-primary'>Ver más</button>
+  </div>
     )
-}
-export default Item;
+  }
+  
+  export default Item
