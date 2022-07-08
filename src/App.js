@@ -1,22 +1,25 @@
-import React from 'react';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'
-import NavBar from './components/NavBar';
-import ItemCount from './components/ItemCount';
-import ItemListContainer from './components/ItemListContainer';
-
-
+import Navbar from './components/NavBar style/NavBar';
+import ItemListContainer from './components/ItemListContainer style/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Cart from './components/Cart/Cart';
 
 function App() {
-  const greeting= "Bienvenidos a CelularesFernando!"
-  return (
-    <>
-     <NavBar/>
-     <ItemListContainer greeting={greeting}/>
-     <ItemCount/>
-    </>
-  );
+    return (
+        <BrowserRouter>
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<ItemListContainer />} />
+                <Route
+                    path="/category/:categoryId"
+                    element={<ItemListContainer />}
+                />
+                <Route path="/detail/:id" element={<ItemDetailContainer />} />
+                <Route path="/cart" element={<Cart />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;
