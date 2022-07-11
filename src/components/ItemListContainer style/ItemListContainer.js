@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from 'react';
-import ItemList from '../ItemList/ItemList';
-import { getProds } from '../../mock/products';
+import ItemList from '../ItemList';
+import { getProds } from '../../Mocks/FakeApi';
 import { useParams } from 'react-router-dom';
 
 const ItemListContainer = () => {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
 
+    const { categoryId } = useParams();
+    //console.log(parametro.categoryId);
+   
     //jewelery
     useEffect(() => {
         setLoading(true);
 
-        const URL = categoryId
+        const URL = categoryId 
             ? `https://fakestoreapi.com/products/category/${categoryId}`
             : 'https://fakestoreapi.com/products';
 

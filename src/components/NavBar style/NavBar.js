@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import CartWidget from '../components/CardWidget';
+import '../../components/NavBar style/styles.css';
+import CartWidget from '../../components/CardWidget style/CardWidget';
 
 const categories = [
     {
