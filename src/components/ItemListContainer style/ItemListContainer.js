@@ -10,7 +10,6 @@ const ItemListContainer = () => {
     const { categoryId } = useParams();
     //console.log(parametro.categoryId);
    
-    //jewelery
     useEffect(() => {
         setLoading(true);
 
@@ -18,7 +17,6 @@ const ItemListContainer = () => {
             ? `https://fakestoreapi.com/products/category/${categoryId}`
             : 'https://fakestoreapi.com/products';
 
-        //'https://fakestoreapi.com/products';
 
         fetch(URL)
             .then((res) => res.json())
@@ -39,6 +37,7 @@ const ItemListContainer = () => {
             }); 
     }, [categoryId]);
 
+    
     return (
         <div>
             {loading ? (

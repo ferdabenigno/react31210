@@ -28,9 +28,9 @@ const categories = [
 
 const Navbar = () => {
     return (
-        <nav>
-            <h2>After</h2>
-            <ul>
+        <nav className='nav'>
+            <h2 className='nav-logo'>Celulares Fernando</h2>
+            <ul className='nav-item'>
                 {categories.map((category) => (
                     <Link to={category.path} key={category.id}>
                         {category.name}
