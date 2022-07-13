@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import ItemCount from '../../components/itemCount style/ItemCount';
-import '../../components/itemCount style/styles.css';
+import ItemCount from '../../components/ItemCount/ItemCount';
+import '../ItemCount/styles.css';
 
 const ItemDetail = ({ product }) => {
 

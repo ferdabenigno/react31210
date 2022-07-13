@@ -12,10 +12,7 @@ const ItemCount = ({ initial, stock, onAdd }) => {
         setCount(count + 1)
     }
     
-    useEffect(() => {
-        setCount(parseInt(initial));
-    })
-
+  
     return (
         <div className='card'>
             <button disabled={count <= 1} onClick= {decrease}>-</button>
