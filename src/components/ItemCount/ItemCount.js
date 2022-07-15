@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useEffect } from 'react';
+
 
 const ItemCount = ({ initial, stock, onAdd }) => {
     const [count, setCount] = useState (parseInt(initial));
@@ -12,7 +12,7 @@ const ItemCount = ({ initial, stock, onAdd }) => {
         setCount(count + 1)
     }
     
-  
+   
     return (
         <div className='card'>
             <button disabled={count <= 1} onClick= {decrease}>-</button>

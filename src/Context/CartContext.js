@@ -8,13 +8,15 @@ const CartProvider = ({children}) =>{
 
     const [cart, setCart] = useState([]);
     
-   /* const addProduct = (item, newQuantity) =>{
+    const addProduct = (item, newQuantity) =>{
         const newCart = cart.filter(prod => prod.id !== item.id);
         newCart.push({ ...item, quantity: newQuantity});
         setCart(newCart);
     }
 
-    console.log('carrito', cart);*/
+    console.log('carrito', cart);
+
+   /*con map 
     const addProduct = (item, quantity) =>{
         if (isInCart(item.id)){
             setCart(cart.map(product =>{
@@ -24,7 +26,7 @@ const CartProvider = ({children}) =>{
             setCart([...cart, { ...item, quantity}]);
         }
     }
-    console.log('carrito', cart)
+    console.log('carrito', cart)*/
 
     const clearCart = () => setCart([]);
 
