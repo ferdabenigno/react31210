@@ -11,9 +11,9 @@ const ItemDetail = ({ product }) => {
     const [GoToCart, setGoToCart] = useState(false);
     const {addProduct} = useCartContext();
 
-    const onAdd = (data, quantity) => {
+    const onAdd = (quantity) => {
         setGoToCart(true);
-        addProduct(data,quantity);
+        addProduct(product,quantity);
     };
 
 

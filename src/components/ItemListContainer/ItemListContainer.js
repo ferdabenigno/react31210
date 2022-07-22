@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+//import { getFirestore, collection , getDocs, query, where } from 'firebase/firestore';
 import ItemList from '../ItemList';
 import { getProds } from '../../Mocks/FakeApi';
 import { useParams } from 'react-router-dom';
@@ -37,6 +38,19 @@ const ItemListContainer = () => {
             }); 
     }, [categoryId]);
 
+    /*useEffect(() => {
+        const querydb = getFirestore();
+        const queryCollection = collection(querydb, 'productos', '4798fF5HdBMDjuZU51TX');
+        if(categoryId){
+        const queryFilter = query(queryCollection, where('category', '==', categoryId))
+        getDocs(queryFilter)    
+            .then(res => setProducts (res.docs.map(product => ({id: product.id, ...product.data()}))));    
+        } else{
+            getDocs(queryCollection)
+                .then(res => setProducts (res.docs.map(product => ({id: product.id, ...product.data()}))));   
+        }
+     }, [categoryId]);
+*/
     
     return (
         <div>
