@@ -13,7 +13,7 @@ const CartProvider = ({children}) =>{
             console.log('ya esta en el carrito, sumo cantidad');
        } else{
             setCart([...cart, {... item, quantity}]);
-       }
+       };
     }
 
     console.log('carrito', cart);

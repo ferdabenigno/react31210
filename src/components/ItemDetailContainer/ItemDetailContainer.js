@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-//import { getFirestore, doc , getDoc } from 'firebase/firestore'
+import { getFirestore, doc , getDoc } from 'firebase/firestore';
 import { useParams } from 'react-router-dom';
 import { getProd } from '../../Mocks/FakeApi';
 import ItemDetail from '../ItemDetail/ItemDetail';
@@ -8,7 +8,7 @@ const ItemDetailContainer = () => {
     const [product, setProduct] = useState({});
     const [loading, setLoading] = useState(true);
 
-    const { id } = useParams();
+    const { id, detalleId } = useParams();
 
 
     useEffect(() => {
@@ -33,12 +33,12 @@ const ItemDetailContainer = () => {
             }); 
     }, [id]);
 
-    /*useEffect(() => {
+    useEffect(() => {
         const querydb = getFirestore();
         const queryDoc = doc(querydb, 'productos', 'detalleId');
         getDoc(queryDoc)
         .then(res => setProduct({id: res.id, ...res.data}));
-     }, [detalleId]);*/
+     }, [detalleId]);
 
     //console.log(product);
     return (
