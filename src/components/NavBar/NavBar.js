@@ -7,29 +7,29 @@ const categories = [
     {
         id: 1,
         path: '/',
-        name: 'Home',
+        name: 'Home  ',
     },
     {
         id: 2,
         path: '/category/samsung',
-        name: 'samsung',
+        name: 'Samsung  ',
     },
     {
         id: 3,
         path: '/category/iphone',
-        name: 'iphone',
+        name: 'Iphone  ',
     },
     {
         id: 4,
         path: '/category/motorola',
-        name: 'motorola',
+        name: 'Motorola  ',
     },
 ];
 
 const Navbar = () => {
     return (
         <nav className='nav'>
-            <h2 className='nav-logo'>Celulares Fernando</h2>
+            <h2 className='nav-logo'>Celulares On Line Don Bosco</h2>
             <ul className='nav-item'>
                 {categories.map((category) => (
                     <Link to={category.path} key={category.id}>

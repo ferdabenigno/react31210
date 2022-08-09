@@ -18,8 +18,7 @@ const ItemDetailContainer = () => {
         .then(setLoading(false));
      }, [id]);
 
-    //console.log(product);
-    return (
+        return (
         <div>
             {loading ? (
                 <h2>Cargando...</h2>

@@ -1,7 +1,6 @@
-import React, {useContext} from 'react';
-import {Cartcontext} from '../../Context/CartContext';
+import React from 'react';
+// import {Cartcontext} from '../../Context/CartContext';
 import { Link } from 'react-router-dom';
-
 const Item = ({ item }) => {
     return (
         <div
