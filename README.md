@@ -68,3 +68,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+"firebase": "^9.9.1": [https://console.firebase.google.com/u/0/project/don-bosco-af3c3/firestore/data/~2Fproductos~2F22UKUVQ2h2tIQd4yM6ga?hl=es-419]
+"react-bootstrap": "^2.4.0": [https://react-bootstrap.github.io/getting-started/introduction]
+"react-dom": "^18.2.0": [https://es.reactjs.org/docs/react-dom.html]
+"react-router-dom": "^6.3.0": [https://www.npmjs.com/package/react-router-dom]
+"react-scripts": "5.0.1": [https://www.npmjs.com/package/react-scripts]
+"react-toastify": "^9.0.8": [https://www.npmjs.com/package/react-toastify]
+"sweetalert2": "^11.4.26": [https://sweetalert2.github.io/#download]
+"web-vitals": "^2.1.4": [https://www.npmjs.com/package/web-vitals]
